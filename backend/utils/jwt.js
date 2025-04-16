@@ -9,7 +9,7 @@ const generateToken = (userId) => {
     };
 
     // Restituisce un JWT con una durata di 90 giorni
-    return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '90d' });
+    return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '365d' });
 };
 
 // Funzione per generare il refresh token
